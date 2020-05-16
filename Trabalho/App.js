@@ -7,13 +7,13 @@ import useCachedResources from './hooks/useCachedResources';
 import BottomTabNavigator from './navigation/BottomTabNavigator';
 import LinkingConfiguration from './navigation/LinkingConfiguration';
 
-import routes from './Pages/routes'
+import Routes from './Pages/routes'
 
 export default function App() {
     return (
         <>
-            <StatusBar />
-            <routes />
+            <StatusBar/>
+            <Routes/>
         </>
     );
 }
