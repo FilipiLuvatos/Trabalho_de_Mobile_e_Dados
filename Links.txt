@@ -1,0 +1,7 @@
+https://reactnavigation.org/docs/hello-react-navigation 
+
+https://reactnative.dev/docs/getting-started
+
+https://expo.io/learn
+
+https://www.youtube.com/watch?v=K8YixGWzpAA
