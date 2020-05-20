@@ -1,41 +1,39 @@
-import React from 'react';
-import { StyleSheet, Button, Text,TextInput, View } from 'react-native';
-import { State } from 'react-native-gesture-handler';
+import React, { Component } from 'react';
+import { TextInput } from 'react-native'
+import { StyleSheet, Button, Text, View } from 'react-native';
 
 
-export default function Ldde(props) {
+export default class Ldde extends Component {
 
+    render() {
+        return (
+            <View style={styles.container}>
+                <Button
 
+                    onPress={this.clicou}
+                    title="click Me"
 
-    return (
-        
-        <View style={styles.container}>
-            <Text>Inserir</Text>
-            <TextInput
-            style={styles.input}
-            
+                />
 
-            />                    
-           <Button
-                title="Inserir"
-           
-            />
-            <Button
-                title="Remover"
-            />
-            <Button
-                title="Busca"
-            />
+                <Button
+                    title="Inserir"
 
-        </View>
-    );
+                />
+                <Button
+                    title="Remover"
+                />
+                <Button
+                    title="Busca"
+                />
 
-  
+            </View>
+        );
+    }
+    clicou = () => {
+        alert("clicou")
+
+    }
 }
-
-
-
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -43,11 +41,4 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    input:{
-        borderWidth: 1,
-        borderColor:'black',
-        padding:8,
-        margin:20,
-        width:200
-    }
 });

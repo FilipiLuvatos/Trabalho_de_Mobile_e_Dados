@@ -1,38 +1,39 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { TextInput } from 'react-native'
 import { StyleSheet, Button, Text, View } from 'react-native';
 
 
-export default function Fila(props) {
+export default class Fila extends Component {
 
+    render() {
+        return (
+            <View style={styles.container}>
+                <Button
 
-    const [value, onChangeText] = React.useState('');
+                    onPress={this.clicou}
+                    title="click Me"
 
-    return (
-        <View style={styles.container}>
-      
-            <TextInput
-            style={styles.input}
-            
+                />
 
-            />                    
-           <Button
-                title="Inserir"
-           
-            />
-            <Button
-                title="Remover"
-            />
-            <Button
-                title="Busca"
-            />
+                <Button
+                    title="Inserir"
 
-        </View>
-    );
+                />
+                <Button
+                    title="Remover"
+                />
+                <Button
+                    title="Busca"
+                />
+
+            </View>
+        );
+    }
+    clicou = () => {
+        alert("clicou")
+
+    }
 }
-
-
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
