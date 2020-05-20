@@ -5,14 +5,16 @@ import { StyleSheet, Text, Button, View } from 'react-native';
 export default function Menu(props) {
     return (
         <View style={styles.container}>
-            <Text>Esta no Main</Text>
+            
             <Button
                 title="LDDE"
                 onPress={() => { props.navigation.navigate('Ldde') }}
             />
+            <br></br>
             <Button
                 title="Fila"
                 onPress={() => { props.navigation.navigate('Fila')}}
+                color='red'
             />
         </View>
     );

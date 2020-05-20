@@ -1,11 +1,30 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Button, Text, View } from 'react-native';
 
 
 export default function Fila(props) {
     return (
         <View style={styles.container}>
-            <Text>Esta nas Estruturas</Text>
+            
+            <Button
+
+                title="Inserir"
+
+
+            />
+            <Button
+
+                title="Remover"
+
+
+            />
+            <Button
+
+                title="Busca"
+
+
+            />
+Z
         </View>
     );
 }
