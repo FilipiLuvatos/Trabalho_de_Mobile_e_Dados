@@ -10,7 +10,7 @@ export default function Menu(props) {
                 title="LDDE"
                 onPress={() => { props.navigation.navigate('Ldde') }}
             />
-            <br></br>
+            
             <Button
                 title="Fila"
                 onPress={() => { props.navigation.navigate('Fila')}}
