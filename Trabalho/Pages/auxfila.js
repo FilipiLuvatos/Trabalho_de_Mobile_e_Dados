@@ -28,13 +28,24 @@ const Fila = () => {
         }
 
         if (vetor.length == 1) {
- 
+
             vetor[0] = null
         }
 
         vetor.shift()
     }
 
+    const Busca = (value) => {
+
+        for (let i = 0; i < vetor.length; i++) {
+            if(vetor[i] == value){
+                return console.log(vetor[i])
+            }
+                
+            
+        }
+
+    }
 
 
     const print = () => console.log(vetor)
@@ -43,6 +54,7 @@ const Fila = () => {
         add,
         remove,
         print,
+        Busca
 
 
     }
@@ -51,6 +63,11 @@ const Fila = () => {
 
 const fila = Fila()
 
-fila.remove()
+fila.add(10)
+fila.add(5)
+fila.add(66)
+fila.add(23)
 
 fila.print()
+
+fila.Busca(66)
