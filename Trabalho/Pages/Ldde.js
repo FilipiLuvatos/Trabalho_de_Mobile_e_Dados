@@ -8,31 +8,29 @@ export default class Ldde extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Button
-
-                    onPress={this.clicou}
-                    title="click Me"
+                
+                <TextInput
+                style={styles.myText}              
 
                 />
 
                 <Button
                     title="Inserir"
-
+                  //  onPress={}//Chma a função da LDDE para inserir
                 />
                 <Button
                     title="Remover"
+                  //  onPress={}//Chama a função da LDDE para remover
                 />
                 <Button
-                    title="Busca"
+                    title="Busca"//Chama a função da LDDE para Buscar
+                   // onPress={}//Chama a função da LDDE para Buscar
                 />
 
             </View>
         );
     }
-    clicou = () => {
-        alert("clicou")
 
-    }
 }
 const styles = StyleSheet.create({
     container: {
@@ -41,4 +39,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
+    myText:{
+        borderWidth:1,borderColor:"blue",
+        margin:10,padding:10, width:'50%'
+    }
+
 });
