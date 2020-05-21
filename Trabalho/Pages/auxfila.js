@@ -1,4 +1,4 @@
-const Fila = () => {
+const Dados_Fila = () => {
 
     const vetor = []
     var inicio = 0
@@ -61,13 +61,3 @@ const Fila = () => {
 
 }
 
-const fila = Fila()
-
-fila.add(10)
-fila.add(5)
-fila.add(66)
-fila.add(23)
-
-fila.print()
-
-fila.Busca(66)
